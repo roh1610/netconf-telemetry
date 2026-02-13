@@ -1,0 +1,310 @@
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.login-card button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-card button:hover {
+    box-shadow: 0 0 15px rgba(22,163,74,0.6);
+}
+
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   GLOBAL BACKGROUND
+=========================== */
+
+body {
+    color: #fff;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+        radial-gradient(circle at top, #1e293b, #0f172a);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    background: #374151;
+}
+
+.online {
+    background: #16a34a;
+}
+
+/* ===========================
+   CONTROLS
+=========================== */
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 20px 40px;
+}
+
+.refresh-select {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.refresh-select option {
+    color: black;
+}
+
+.start-btn {
+    background: #16a34a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.start-btn:hover {
+    box-shadow: 0 0 15px rgba(22,163,74,0.6);
+}
+
+.stop-btn {
+    background: #ef4444;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===========================
+   GRID LAYOUT
+=========================== */
+
+.container {
+    padding: 0 40px 40px 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.live {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+th {
+    text-align: left;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+td {
+    padding: 15px;
+    background: rgba(15,23,42,0.7);
+}
+
+tr td:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+tr td:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+/* ===========================
+   PROGRESS BARS
+=========================== */
+
+.progress {
+    height: 8px;
+    border-radius: 5px;
+    background: #1e293b;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* ===========================
+   ALERTS
+=========================== */
+
+.alerts-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255,0,0,0.3), rgba(255,0,0,0.1));
+    border-left: 4px solid red;
+}
+
+.alert-count {
+    background: red;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.no-alert {
+    opacity: 0.6;
+}
+
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+}
+
+.login-card button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-card button:hover {
+    box-shadow: 0 0 15px rgba(22,163,74,0.6);
+}
+
