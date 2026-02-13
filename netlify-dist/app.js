@@ -17,7 +17,7 @@ async function toggleSystem() {
 
     if (!systemRunning) {
 
-        await fetch('/api/netconf/connect', { method: 'POST' });
+        await fetch('http://localhost:8081/api/netconf/connect', { method: 'POST' });
 
         systemRunning = true;
 
