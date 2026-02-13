@@ -1,12 +1,4 @@
 /* ===========================
-   AUTH PROTECTION
-=========================== */
-
-if (localStorage.getItem("adminLoggedIn") !== "true") {
-    window.location.href = "/login.html";
-}
-
-/* ===========================
    VARIABLES
 =========================== */
 
@@ -174,6 +166,5 @@ async function loadAlerts() {
 
 function logout() {
     localStorage.removeItem("adminLoggedIn");
-    window.location.href = "/login.html";
 }
 
